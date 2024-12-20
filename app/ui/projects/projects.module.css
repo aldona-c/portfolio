@@ -1,0 +1,70 @@
+@import "../vars.css";
+
+.imageLink img {
+  transition: scale 0.2s ease-in-out;
+}
+
+.imageLink:hover img {
+  transition: scale 0.2s ease-in;
+  scale: 100%;
+}
+
+.section {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: calc(var(--base-space) * 7);
+  grid-row-gap: 0px;
+}
+
+.section:not(:last-child) {
+  border-bottom: 1px solid var(--color-gray-300);
+  padding-bottom: calc(var(--base-space) * 7);
+  margin-bottom: calc(var(--base-space) * 7);
+}
+
+.imageBox {
+  align-items: center;
+  background-color: var(--color-background);
+  border-radius: 6px;
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: center;
+  padding: calc(var(--base-space) * 6);
+}
+
+.pairGroup {
+  display: flex;
+  margin-bottom: var(--base-space);
+}
+
+.descriptionList {
+  color: var(--color-text-medium);
+  margin-bottom: calc(var(--base-space) * 4);
+}
+
+.link {
+  transition: background-color 0.2s ease-in;
+  background-color: var(--color-background-dark);
+  border-radius: calc(var(--base-space) * 4);
+  color: var(--color-text-light);
+  display: inline-flex;
+  padding: calc(var(--base-space) * 1.5) calc(var(--base-space) * 3);
+}
+
+.link:hover {
+  transition: background-color 0.2s ease-in;
+  background-color: var(--color-button-hover);
+}
+
+@media (max-width: 1024px) {
+  .section {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: calc(var(--base-space) * 4);
+  }
+  .imageBox {
+    padding: calc(var(--base-space) * 3);
+  }
+}

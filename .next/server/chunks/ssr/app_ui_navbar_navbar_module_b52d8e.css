@@ -1,0 +1,110 @@
+/* [project]/app/ui/navbar/navbar.module.css [app-client] (css) */
+.navbar-module__Rw9DrG__navbar, .navbar-module__Rw9DrG__navbarHamburger {
+  padding: calc(var(--base-space) * 2) calc(var(--base-space) * 10);
+  position: sticky;
+  top: 0;
+}
+
+.navbar-module__Rw9DrG__navbar {
+  background-color: var(--color-background);
+}
+
+.navbar-module__Rw9DrG__navbarHamburger {
+  background-color: #fff;
+}
+
+.navbar-module__Rw9DrG__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1170px;
+}
+
+.navbar-module__Rw9DrG__active {
+  color: var(--color-accent-text);
+}
+
+.navbar-module__Rw9DrG__logoWrapper {
+  align-items: center;
+  display: flex;
+}
+
+.navbar-module__Rw9DrG__logo {
+  height: auto;
+  width: auto;
+}
+
+.navbar-module__Rw9DrG__logoText {
+  font-size: 1.5rem;
+  margin-left: var(--base-space);
+}
+
+.navbar-module__Rw9DrG__innerRight {
+  align-items: center;
+  display: flex;
+  margin-left: calc(var(--base-space) * 2);
+}
+
+.navbar-module__Rw9DrG__navItem {
+  transition: color .2s ease-in;
+  padding: 0 calc(var(--base-space) * 2);
+  white-space: nowrap;
+}
+
+.navbar-module__Rw9DrG__navItem:hover, .navbar-module__Rw9DrG__hamburgerItem:hover {
+  transition: color .2s ease-in;
+  color: var(--color-accent-text);
+}
+
+.navbar-module__Rw9DrG__navItem:last-child {
+  padding-right: 0;
+}
+
+.navbar-module__Rw9DrG__hamburgerButton {
+  display: none;
+}
+
+.navbar-module__Rw9DrG__hamburgerWrapper {
+  display: none;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.navbar-module__Rw9DrG__hamburgerContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.navbar-module__Rw9DrG__hamburgerItem {
+  transition: color .2s ease-in;
+  font-size: 1.5rem;
+  padding: var(--base-space) 0;
+}
+
+@media (width <= 640px) {
+  .navbar-module__Rw9DrG__hamburgerWrapper {
+    display: block;
+  }
+
+  .navbar-module__Rw9DrG__hamburgerButton {
+    display: block;
+  }
+
+  .navbar-module__Rw9DrG__navbar, .navbar-module__Rw9DrG__navbarHamburger {
+    padding: calc(var(--base-space) * 2) calc(var(--base-space) * 5);
+  }
+
+  .navbar-module__Rw9DrG__navItems {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=app_ui_navbar_navbar_module_b52d8e.css.map*/

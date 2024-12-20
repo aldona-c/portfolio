@@ -1,0 +1,42 @@
+/* [project]/app/ui/hero-section/hero-section.module.css [app-client] (css) */
+.hero-section-module__abpi7q__wrapper {
+  background-color: var(--color-background);
+  padding: calc(var(--base-space) * 10);
+}
+
+.hero-section-module__abpi7q__text {
+  flex: auto;
+  font-size: 2.5rem;
+  margin: 0;
+  max-width: 31rem;
+}
+
+.hero-section-module__abpi7q__textEmphasised {
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.hero-section-module__abpi7q__imageWrapper {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
+
+@media (width <= 1024px) {
+  .hero-section-module__abpi7q__imageWrapper {
+    display: none;
+  }
+
+  .hero-section-module__abpi7q__text {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (width <= 640px) {
+  .hero-section-module__abpi7q__text {
+    font-size: 1.75rem;
+  }
+}
+
+/*# sourceMappingURL=app_ui_hero-section_hero-section_module_b52d8e.css.map*/

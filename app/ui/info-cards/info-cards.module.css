@@ -1,0 +1,10 @@
+@import "../vars.css";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: calc(var(--base-space) * 3);
+  grid-row-gap: calc(var(--base-space) * 3);
+  margin-bottom: calc(var(--base-space) * 4);
+}

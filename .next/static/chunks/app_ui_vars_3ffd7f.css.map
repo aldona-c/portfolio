@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/ui/vars.css"],"sourcesContent":[":root {\n  --base-space: 0.5rem;\n  --border-radius: 6px;\n\n  --color-gray-100: #f5f5f3;\n  --color-gray-300: #cecece;\n  --color-gray-700: #646464;\n  --color-gray-750: #41414e;\n  --color-gray-800: #333333;\n  --color-gray-900: #26262b;\n\n  --color-red-200: #ec9796;\n  --color-red-400: #fd496d;\n  --color-red-450: #db524d;\n  --color-red-700: #de022e;\n\n  --color-green-200: #92cca5;\n\n  --color-blue-800: #43679a;\n  --color-blue-300: #7faef3;\n\n  --color-border: var(--color-gray-300);\n  --color-accent: var(--color-red-400);\n  --color-accent-text: var(--color-red-700);\n  --color-background: var(--color-gray-100);\n  --color-background-dark: var(--color-gray-900);\n  --color-text-medium: var(--color-gray-700);\n  --color-text: var(--color-gray-800);\n  --color-text-light: var(--color-gray-100);\n  --color-button-hover: var(--color-gray-750);\n\n  --color-success: var(--color-green-200);\n  --color-warning: var(--color-red-450);\n  --color-warning-light: var(--color-red-200);\n  --color-neutral: var(--color-blue-800);\n  --color-neutral-light: var(--color-blue-300);\n}\n"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

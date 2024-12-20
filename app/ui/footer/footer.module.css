@@ -1,0 +1,46 @@
+@import "../vars.css";
+
+.wrapper {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+  padding: calc(var(--base-space) * 8) calc(var(--base-space) * 10);
+}
+
+.inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 1170px;
+}
+
+.links {
+  display: flex;
+  margin-top: calc(var(--base-space) * 5);
+}
+
+.link {
+  transition: color 0.2s ease-in;
+  padding: var(--base-space);
+}
+
+.link:hover {
+  transition: color 0.2s ease-in;
+  color: var(--color-accent);
+}
+
+.link:not(:last-child) {
+  margin-right: calc(var(--base-space) * 5);
+}
+
+@media (max-width: 640px) {
+  .links {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .link:not(:last-child) {
+    margin: 0 0 var(--base-space) 0;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/app/page": [
+      "static/media/pxiEyp8kv8JHgFVrJJfecnFHGPc-s.p.c336a9d1.woff2",
+      "static/media/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk-s.p.dd0b3887.woff2",
+      "static/media/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk-s.p.d95035ce.woff2",
+      "static/media/CSR84z9ShvucWzsMKyhdTOIAStt_-s.p.3d91dfde.woff2",
+      "static/media/CSR74z9ShvucWzsMKyDmafctaNZUvuwl-s.p.328982ad.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

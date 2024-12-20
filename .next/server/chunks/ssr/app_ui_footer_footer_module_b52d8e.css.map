@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/ui/footer/footer.module.css"],"sourcesContent":["@import \"../vars.css\";\n\n.wrapper {\n  background-color: var(--color-background-dark);\n  color: var(--color-text-light);\n  padding: calc(var(--base-space) * 8) calc(var(--base-space) * 10);\n}\n\n.inner {\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  margin: auto;\n  max-width: 1170px;\n}\n\n.links {\n  display: flex;\n  margin-top: calc(var(--base-space) * 5);\n}\n\n.link {\n  transition: color 0.2s ease-in;\n  padding: var(--base-space);\n}\n\n.link:hover {\n  transition: color 0.2s ease-in;\n  color: var(--color-accent);\n}\n\n.link:not(:last-child) {\n  margin-right: calc(var(--base-space) * 5);\n}\n\n@media (max-width: 640px) {\n  .links {\n    align-items: center;\n    flex-direction: column;\n  }\n\n  .link:not(:last-child) {\n    margin: 0 0 var(--base-space) 0;\n  }\n}\n"],"names":[],"mappings":"AAEA;;;;;;AAMA;;;;;;;;;AASA;;;;;AAKA;;;;;AAKA;;;;;AAKA;;;;AAIA;EACE;;;;;EAKA"}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
