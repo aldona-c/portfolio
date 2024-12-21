@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/ui/content-wrapper/content-wrapper.module.css"],"sourcesContent":["@import \"../vars.css\";\n\n.wrapper {\n  padding: calc(var(--base-space) * 8) calc(var(--base-space) * 10);\n}\n\n.projectHero {\n  padding: calc(var(--base-space) * 6) calc(var(--base-space) * 10) 0\n    calc(var(--base-space) * 10);\n}\n\n.background {\n  background-color: var(--color-background);\n}\n\n.inner {\n  margin: auto;\n}\n\n.wide {\n  max-width: 1170px;\n}\n\n.narrow {\n  max-width: 1024;\n}\n\n.innerRow {\n  align-items: center;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-template-rows: 1fr;\n  grid-column-gap: calc(var(--base-space) * 7);\n  grid-row-gap: 0px;\n}\n\n@media (max-width: 1024px) {\n  .innerRow {\n    display: flex;\n  }\n}\n\n@media (max-width: 640px) {\n  .wrapper {\n    padding: calc(var(--base-space) * 5);\n  }\n\n  .projectHero {\n    padding: calc(var(--base-space) * 4) calc(var(--base-space) * 5) 0\n      calc(var(--base-space) * 5);\n  }\n}\n"],"names":[],"mappings":"AAEA;;;;AAIA;;;;AAKA;;;;AAIA;;;;AAIA;;;;AAIA;;;;AAIA;;;;;;;;;AASA;EACE;;;;;AAKF;EACE;;;;EAIA"}},
-    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/rpa-data-aggregator/rpa-data-aggregator.module.css"],"sourcesContent":["@import \"../ui/vars.css\";\n\n.heroWrapper {\n  display: grid;\n  grid-template-columns: 3.5fr 0.8fr;\n  grid-template-rows: 1fr;\n  grid-column-gap: 24px;\n  grid-row-gap: 0px;\n}\n\n.summary {\n  display: grid;\n  grid-template-columns: 4fr 1fr;\n  grid-template-rows: 1fr;\n  grid-column-gap: calc(var(--base-space) * 8);\n  grid-row-gap: 0px;\n}\n\n.sectionWrapper {\n  margin-bottom: calc(var(--base-space) * 4);\n}\n\n.textBlock {\n  border-right: 1px solid var(--color-border);\n  padding-right: calc(var(--base-space) * 8);\n}\n\n.shadow {\n  box-shadow: 3px 3px 16px -4px rgba(0, 0, 0, 0.45);\n}\n\n@media (max-width: 768px) {\n  .summary {\n    grid-template-columns: auto;\n    grid-template-rows: repeat(2, auto);\n    grid-row-gap: calc(var(--base-space) * 4);\n    grid-column-gap: 0;\n  }\n\n  .textBlock {\n    border-bottom: 1px solid var(--color-border);\n    border-right: 0;\n    padding-right: 0;\n  }\n}\n"],"names":[],"mappings":"AAEA;;;;;;;;AAQA;;;;;;;;AAQA;;;;AAIA;;;;;AAKA;;;;AAIA;EACE;;;;;;;EAOA"}},
-    {"offset": {"line": 44, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

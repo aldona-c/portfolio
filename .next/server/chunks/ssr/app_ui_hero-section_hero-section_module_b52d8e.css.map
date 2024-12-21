@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/ui/hero-section/hero-section.module.css"],"sourcesContent":["@import \"../vars.css\";\n\n.wrapper {\n  background-color: var(--color-background);\n  padding: calc(var(--base-space) * 10);\n}\n\n.text {\n  flex: 1 1 auto;\n  font-size: 2.5rem;\n  margin: 0;\n  max-width: 31rem;\n}\n\n.textEmphasised {\n  color: var(--color-accent);\n  white-space: nowrap;\n}\n\n.imageWrapper {\n  display: flex;\n  flex: 1 1 auto;\n  justify-content: center;\n}\n\n@media (max-width: 1024px) {\n  .imageWrapper {\n    display: none;\n  }\n\n  .text {\n    margin: auto;\n    text-align: center;\n  }\n}\n\n@media (max-width: 640px) {\n  .text {\n    font-size: 1.75rem;\n  }\n}\n"],"names":[],"mappings":"AAEA;;;;;AAKA;;;;;;;AAOA;;;;;AAKA;;;;;;AAMA;EACE;;;;EAIA;;;;;;AAMF;EACE"}},
-    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
