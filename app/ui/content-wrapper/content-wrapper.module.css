@@ -40,11 +40,11 @@
 
 @media (max-width: 640px) {
   .wrapper {
-    padding: calc(var(--base-space) * 5);
+    padding: calc(var(--base-space) * 4);
   }
 
   .projectHero {
-    padding: calc(var(--base-space) * 4) calc(var(--base-space) * 5) 0
-      calc(var(--base-space) * 5);
+    padding: calc(var(--base-space) * 4) calc(var(--base-space) * 4) 0
+      calc(var(--base-space) * 4);
   }
 }
