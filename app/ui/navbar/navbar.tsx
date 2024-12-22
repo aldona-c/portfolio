@@ -9,8 +9,8 @@ import styles from "./navbar.module.css";
 import { Button } from "../button";
 
 const links = [
-  { name: "Work", href: "/" },
-  { name: "About me", href: "/about-me" },
+  { name: "Work", href: "/portfolio" },
+  { name: "About me", href: "/portfolio/about-me" },
   { name: "Contact", href: "mailto:aldona.cepliejute@gmail.com" },
 ];
 
