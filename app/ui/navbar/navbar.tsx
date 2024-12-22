@@ -50,7 +50,7 @@ export default function Navbar() {
             <div className={styles.hamburgerWrapper}>
               <div className={styles.navbarHamburger}>
                 <div className={styles.inner}>
-                  <a href="/" className={styles.logoWrapper}>
+                  <a href="/portfolio" className={styles.logoWrapper}>
                     <Image
                       src="/logo-a.svg"
                       width={33}
