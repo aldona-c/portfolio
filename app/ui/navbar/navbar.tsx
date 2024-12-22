@@ -21,6 +21,7 @@ export default function Navbar() {
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
+  console.log(currentPath);
 
   return (
     <div className={styles.navbar}>
