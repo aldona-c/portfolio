@@ -1,5 +1,3 @@
-@import "../ui/vars.css";
-
 .heroWrapper {
   display: grid;
   grid-template-columns: 3.5fr 0.8fr;

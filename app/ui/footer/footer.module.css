@@ -1,5 +1,3 @@
-@import "../vars.css";
-
 .wrapper {
   background-color: var(--color-background-dark);
   color: var(--color-text-light);

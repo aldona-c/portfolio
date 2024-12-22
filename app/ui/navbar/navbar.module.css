@@ -1,5 +1,3 @@
-@import "../vars.css";
-
 .navbar,
 .navbarHamburger {
   padding: calc(var(--base-space) * 2) calc(var(--base-space) * 10);

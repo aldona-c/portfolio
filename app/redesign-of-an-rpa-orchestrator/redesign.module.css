@@ -1,5 +1,3 @@
-@import "../ui/vars.css";
-
 .summary {
   display: grid;
   grid-template-columns: 4fr 1fr;

@@ -1,5 +1,3 @@
-@import "../vars.css";
-
 .imageLink img {
   transition: scale 0.2s ease-in-out;
 }

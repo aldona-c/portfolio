@@ -1,5 +1,3 @@
-@import "../vars.css";
-
 .wrapper {
   padding: calc(var(--base-space) * 8) calc(var(--base-space) * 10);
 }
