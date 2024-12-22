@@ -8,7 +8,7 @@ const projects = [
     title: "RPA data aggregator",
     description:
       "A web application that displays aggregated data from several instances of an RPA orchestrator.",
-    img: "/me-preview.png",
+    img: "/portfolio/me-preview.png",
     role: "UX/UI Designer",
     industry: "Robotic Process Automation",
     length: "2 years",
@@ -19,7 +19,7 @@ const projects = [
     title: "Redesign of an RPA orchestrator",
     description:
       "A web application that specializes in Robotic Process Automation (RPA) orchestration, helping organizations automate and streamline their business processes.",
-    img: "/core-preview-2.png",
+    img: "/portfolio/core-preview-2.png",
     role: "UX/UI Designer",
     industry: "Robotic Process Automation",
     length: "2 months",
@@ -30,7 +30,7 @@ const projects = [
     title: "Lifeplanner",
     description:
       "A web application that acts as a digital safe. It is a place to store your documents, information about your assets or anything sentimental like photos of your most precious moments.",
-    img: "/lifeplanner-preview.png",
+    img: "/portfolio/lifeplanner-preview.png",
     role: "UX/UI Designer, Frontend Developer",
     industry: "Personal organization",
     length: "1.5 years",

@@ -15,7 +15,7 @@ export default function Lifeplanner() {
         <ContentWrapper wide withBackground projectHero>
           <div className={styles.heroWrapper}>
             <Image
-              src="/lifeplanner-hero.png"
+              src="/portfolio/lifeplanner-hero.png"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -23,7 +23,7 @@ export default function Lifeplanner() {
               priority
             />
             <Image
-              src="/lifeplanner-hero-mobile.jpg"
+              src="/portfolio/lifeplanner-hero-mobile.jpg"
               width={323}
               height={964}
               className={styles.shadow}
@@ -99,7 +99,7 @@ export default function Lifeplanner() {
               </p>
             </div>
             <Image
-              src="/lifeplanner-hero.png"
+              src="/portfolio/lifeplanner-hero.png"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -110,7 +110,7 @@ export default function Lifeplanner() {
         <ContentWrapper>
           <div className={styles.solutionwrapper}>
             <Image
-              src="/lifeplanner-share-form.jpg"
+              src="/portfolio/lifeplanner-share-form.jpg"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -147,7 +147,7 @@ export default function Lifeplanner() {
               </p>
             </div>
             <Image
-              src="/lifeplanner-tips-2.png"
+              src="/portfolio/lifeplanner-tips-2.png"
               width={1440}
               height={964}
               className={styles.shadow}

@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         <a href="/portfolio" className={styles.logoWrapper}>
           <Image
-            src="/logo-a.svg"
+            src="/portfolio/logo-a.svg"
             width={33}
             height={40}
             alt="Image of the application"
@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className={styles.innerRight}>
           <Button onClick={toggleHamburger} className={styles.hamburgerButton}>
             <Image
-              src="/hamburger.svg"
+              src="/portfolio/hamburger.svg"
               width={32}
               height={32}
               alt="Image of the application"
@@ -52,20 +52,20 @@ export default function Navbar() {
                 <div className={styles.inner}>
                   <a href="/portfolio" className={styles.logoWrapper}>
                     <Image
-                      src="/logo-a.svg"
+                      src="/portfolio/logo-a.svg"
                       width={33}
                       height={40}
-                      alt="Image of the application"
+                      alt="Logo"
                       className={styles.logo}
                       priority
                     />
                   </a>
                   <Button onClick={toggleHamburger}>
                     <Image
-                      src="/close.svg"
+                      src="/portfolio/close.svg"
                       width={32}
                       height={32}
-                      alt="Image of the application"
+                      alt="Logo"
                       className={styles.logo}
                       priority
                     />

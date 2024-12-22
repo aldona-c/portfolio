@@ -16,7 +16,7 @@ export default function AboutMe() {
         <ContentWrapper wide withBackground projectHero>
           <div className={styles.heroWrapper}>
             <Image
-              src="/me-dashboard.png"
+              src="/portfolio/me-dashboard.png"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -24,7 +24,7 @@ export default function AboutMe() {
               priority
             />
             <Image
-              src="/me-side-panel.png"
+              src="/portfolio/me-side-panel.png"
               width={323}
               height={964}
               className={styles.shadow}
@@ -116,7 +116,7 @@ export default function AboutMe() {
           </ul>
           <div className={styles.sectionWrapper}>
             <Image
-              src={"/setup-flow.png"}
+              src={"/portfolio/setup-flow.png"}
               width={1240}
               height={402}
               className={styles.shadow}
@@ -155,7 +155,7 @@ export default function AboutMe() {
             environments.
           </p>
           <Image
-            src="/warnings.png"
+            src="/portfolio/warnings.png"
             width={2183}
             height={964}
             className={styles.shadow}
@@ -202,7 +202,7 @@ export default function AboutMe() {
             the navigation issue. We repeated the tests after the changes.
           </p>
           <Image
-            src="/events.png"
+            src="/portfolio/events.png"
             width={2183}
             height={964}
             className={styles.shadow}

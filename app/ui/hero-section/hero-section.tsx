@@ -13,7 +13,7 @@ export default function HeroSection() {
       </p>
       <div className={styles.imageWrapper}>
         <Image
-          src={"/hero-img.svg"}
+          src={"/portfolio/hero-img.svg"}
           width={409}
           height={433}
           alt="Illustration of a person sitting by a computer"

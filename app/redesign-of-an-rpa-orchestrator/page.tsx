@@ -14,7 +14,7 @@ export default function Redesign() {
       <main>
         <ContentWrapper wide withBackground projectHero>
           <Image
-            src="/core-hero.png"
+            src="/portfolio/core-hero.png"
             width={1170}
             height={964}
             alt="Image of the RPA application"
@@ -63,7 +63,7 @@ export default function Redesign() {
           <div className={styles.imgWrapper}>
             <h2>Before redesign</h2>
             <Image
-              src="/core-old.png"
+              src="/portfolio/core-old.png"
               width={1024}
               height={722}
               className={styles.imageMedium}
@@ -73,7 +73,7 @@ export default function Redesign() {
           <div className={styles.imgWrapper}>
             <h2>After redesign</h2>
             <Image
-              src="/core-preview-2.png"
+              src="/portfolio/core-preview-2.png"
               width={1024}
               height={722}
               className={styles.imageMedium}
@@ -125,14 +125,14 @@ export default function Redesign() {
             </div>
             <div className={styles.chartColorWrapper}>
               <Image
-                src="/chart-colors-dark.png"
+                src="/portfolio/chart-colors-dark.png"
                 width={1024}
                 height={460}
                 className={styles.shadow}
                 alt="Image of chart colors dark"
               />
               <Image
-                src="/chart-colors-light.png"
+                src="/portfolio/chart-colors-light.png"
                 width={1024}
                 height={460}
                 className={styles.shadow}
@@ -172,14 +172,14 @@ export default function Redesign() {
             been avoided if the UX team was included earlier.
           </p>
           <Image
-            src="/core-preview-2.png"
+            src="/portfolio/core-preview-2.png"
             width={1024}
             height={722}
             className={styles.imgWrapperSmallMargin}
             alt="Image of the application in dark and light mode"
           />
           <Image
-            src="/core-tables.png"
+            src="/portfolio/core-tables.png"
             width={1024}
             height={722}
             alt="Image of tables and a chart"

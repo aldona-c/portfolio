@@ -31,7 +31,7 @@ export default function AboutMe() {
             </div>
             <div className={styles.imageWrapper}>
               <Image
-                src="/about-me.png"
+                src="/portfolio/about-me.png"
                 width={292}
                 height={292}
                 className={styles.img}
@@ -46,7 +46,7 @@ export default function AboutMe() {
             <div className={styles.card}>
               <div className={styles.iconWrapper}>
                 <Image
-                  src="/brush.svg"
+                  src="/portfolio/brush.svg"
                   width={120}
                   height={120}
                   alt="Icon of a brush"
@@ -64,7 +64,7 @@ export default function AboutMe() {
             <div className={styles.card}>
               <div className={styles.iconWrapper}>
                 <Image
-                  src="/code.svg"
+                  src="/portfolio/code.svg"
                   width={120}
                   height={120}
                   alt="Icon of a closing code bracket"
