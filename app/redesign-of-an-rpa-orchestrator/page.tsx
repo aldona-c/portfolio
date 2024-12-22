@@ -128,12 +128,14 @@ export default function Redesign() {
                 src="/chart-colors-dark.png"
                 width={1024}
                 height={460}
+                className={styles.shadow}
                 alt="Image of chart colors dark"
               />
               <Image
                 src="/chart-colors-light.png"
                 width={1024}
                 height={460}
+                className={styles.shadow}
                 alt="Image of chart colors light"
               />
             </div>

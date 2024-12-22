@@ -47,7 +47,7 @@ export default function AboutMe() {
               <h2>My contribution</h2>
               <p>
                 I worked on the project from the very beginning until the
-                finished MVP in a cross functional team following Agile
+                finished MVP in a cross-functional team following Agile
                 methodology. My work included creating user flows, interactive
                 prototypes, high fidelity mockups, usability testing and
                 contributing to the design system.

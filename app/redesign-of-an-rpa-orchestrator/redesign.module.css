@@ -28,6 +28,12 @@
   max-width: 80%;
 }
 
+.shadow {
+  -webkit-box-shadow: 3px 3px 16px -4px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 3px 3px 16px -4px rgba(0, 0, 0, 0.45);
+  box-shadow: 3px 3px 16px -4px rgba(0, 0, 0, 0.45);
+}
+
 .colourSection {
   align-items: center;
   display: flex;
