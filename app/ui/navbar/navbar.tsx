@@ -9,8 +9,8 @@ import styles from "./navbar.module.css";
 import { Button } from "../button";
 
 const links = [
-  { name: "Work", href: "/" },
-  { name: "About me", href: "/about-me" },
+  { name: "Work", href: "/portfolio", hrefActive: "/" },
+  { name: "About me", href: "/portfolio/about-me", hrefActive: "/about-me" },
   { name: "Contact", href: "mailto:aldona.cepliejute@gmail.com" },
 ];
 
@@ -77,10 +77,10 @@ export default function Navbar() {
                   return (
                     <a
                       key={link.name}
-                      href={`/portfolio/${link.href}`}
+                      href={link.href}
                       className={clsx(
                         styles.hamburgerItem,
-                        currentPath === link.href && styles.active
+                        currentPath === link.hrefActive && styles.active
                       )}
                     >
                       {link.name}
@@ -96,10 +96,10 @@ export default function Navbar() {
               return (
                 <a
                   key={link.name}
-                  href={`/portfolio/${link.href}`}
+                  href={link.href}
                   className={clsx(
                     styles.navItem,
-                    currentPath === link.href && styles.active
+                    currentPath === link.hrefActive && styles.active
                   )}
                 >
                   {link.name}
