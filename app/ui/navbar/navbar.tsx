@@ -9,8 +9,8 @@ import styles from "./navbar.module.css";
 import { Button } from "../button";
 
 const links = [
-  { name: "Work", href: "/portfolio" },
-  { name: "About me", href: "/portfolio/about-me" },
+  { name: "Work", href: "/" },
+  { name: "About me", href: "/about-me" },
   { name: "Contact", href: "mailto:aldona.cepliejute@gmail.com" },
 ];
 
@@ -21,7 +21,6 @@ export default function Navbar() {
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
-  console.log(currentPath);
 
   return (
     <div className={styles.navbar}>
@@ -78,7 +77,7 @@ export default function Navbar() {
                   return (
                     <a
                       key={link.name}
-                      href={link.href}
+                      href={`/portfolio/${link.href}`}
                       className={clsx(
                         styles.hamburgerItem,
                         currentPath === link.href && styles.active
@@ -97,7 +96,7 @@ export default function Navbar() {
               return (
                 <a
                   key={link.name}
-                  href={link.href}
+                  href={`/portfolio/${link.href}`}
                   className={clsx(
                     styles.navItem,
                     currentPath === link.href && styles.active

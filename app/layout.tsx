@@ -8,6 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/portfolio/favicon.ico" />
+      </head>
       <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
