@@ -7,6 +7,7 @@ import InfoCards from "../ui/info-cards/info-cards";
 import Footer from "../ui/footer/footer";
 import LabelPairs from "../ui/label-pairs/label-pairs";
 import PageWrapper from "../ui/page-wrapper/page-wrapper";
+import ListItem from "../ui/list-item/list-item";
 
 export default function AboutMe() {
   return (
@@ -39,7 +40,7 @@ export default function AboutMe() {
             <div className={styles.textBlock}>
               <p>
                 This was the second product developed by the company I worked
-                for, following their main product—a RPA orchestrator. It was
+                for, following their main product - a RPA orchestrator. It was
                 designed to supplement the core application by aggregating data
                 from several instances of the RPA orchestrator and displaying it
                 in a convenient way.
@@ -61,17 +62,71 @@ export default function AboutMe() {
           </div>
         </ContentWrapper>
         <ContentWrapper>
-          <h1>Discovery and planning</h1>
+          <h1>Project overview</h1>
+        </ContentWrapper>
+        <ContentWrapper withBackground>
+          <h1>Research</h1>
+          <h2>Methods:</h2>
           <p>
+            <b>Stakeholder interviews.</b> There was no possibility to talk to
+            users directly, however we had a few people on the team with a lot
+            of RPA experience and knowledge. I set up some meetings with these
+            people.
+          </p>
+          <p>
+            <b>Industry & Competitive Research.</b> Even though competitors did
+            not offer the exact same solution we were building, there were still
+            a lot of RPA related products out there. At this stage, my plan was
+            to learn as much as possible about the RPA industry in general -
+            watch some tutorials, try out some RPA applications myself, read
+            articles.
+          </p>
+          <p>
+            <b>Familiarising with the RPA Orchestrator (the main product).</b> I
+            spent some time getting to know the client’s main product - the RPA
+            Orchestrator. I took some notes of what worked well, and what could
+            be improved.
+          </p>
+          <h2>Insights:</h2>
+          <ul>
+            <ListItem>
+              The key functionalities for the ME were going to be the dashboard
+              and the event page.
+            </ListItem>
+            <ListItem>
+              The users were most likely going to be tech savvy and familiar
+              with RPA terminology.
+            </ListItem>
+            <ListItem>
+              The users prefer to see a lot of information on the screen at
+              once.
+            </ListItem>
+            <ListItem>
+              The general layout of the aggregator should resemble the main
+              application - it should be easy for the users to switch from one
+              application to the other.
+            </ListItem>
+            <ListItem>
+              The aggregator should have all the same widgets and charts as the
+              main application.
+            </ListItem>
+          </ul>
+        </ContentWrapper>
+        <ContentWrapper>
+          <h1>Project scope</h1>
+          {/* <p>
             During the Discovery phase, I collaborated with stakeholders to
             understand the core problem we were trying to solve and identified
             the target audience for the product. I also spent some time getting
             to know their main product and RPA industry in general—I tried using
             some RPA applications myself, had meetings with people who are more
             experienced in the field.
-          </p>
-          <h2>Goals for the MVP</h2>
+          </p> */}
+          <p>Here are the main features that were planned for the MVP:</p>
           <InfoCards />
+        </ContentWrapper>
+        <ContentWrapper withBackground>
+          <h1>Design process and outcome</h1>
           <h2>Limitations</h2>
           <p>
             <b>Application layout.</b> Because the product was going to show
@@ -88,32 +143,71 @@ export default function AboutMe() {
             customisable, bigger changes can sometimes be quite costly to
             implement, and more difficult to maintain.
           </p>
-        </ContentWrapper>
-        <ContentWrapper withBackground>
-          <h1>Environment setup flow</h1>
+          <h2>Layout</h2>
           <p>
-            Environment setup flow was a core feature for the
-            application—without it we wouldn’t be able to access data from the
-            RPA orchestrator. We started by having discussions with the
-            development team in order to figure out the technical part of the
-            setup. After figuring out the technical side, we moved on to user
-            flow mapping. We settled on a three step setup process:
+            The layout we used was pretty typical for applications containing
+            dashboards:
           </p>
           <ul>
-            <li>
+            <ListItem>A side menu for content related navigation.</ListItem>
+            <ListItem>A top bar for profile and application settings.</ListItem>
+            <ListItem>
+              The side menu can be collapsed to maximise space for main content.
+            </ListItem>
+            <ListItem>
+              8px scaling factor was used to keep the spacing between the
+              elements consistent.
+            </ListItem>
+            <ListItem>All widgets and charts easily resizable.</ListItem>
+            <ListItem>The dashboard can be divided into sections.</ListItem>
+            <ListItem>
+              Actions are handled via a side panel in order to not lose context.
+            </ListItem>
+          </ul>
+          <div className={styles.sectionWrapper}>
+            <Image
+              src="/me-dashboard.png"
+              width={1440}
+              height={964}
+              className={styles.shadow}
+              alt="Image of a dashboard"
+              priority
+            />
+          </div>
+          <div className={styles.sectionWrapper}>
+            <Image
+              src="/side-panel-open.png"
+              width={1440}
+              height={964}
+              className={styles.shadow}
+              alt="Image of a dashboard"
+              priority
+            />
+          </div>
+          <h2>Environment setup flow</h2>
+          <p>
+            Environment setup flow was a core feature for the application -
+            without it we wouldn’t be able to access data from the RPA
+            orchestrator. We started by having discussions with the development
+            team in order to figure out the technical part of the setup. After
+            figuring out the technical side, we moved on to user flow mapping.
+            We settled on a three step setup process:
+          </p>
+          <ol>
+            <ListItem ordered>
               1. Adding an environment (RPA orchestrator instance) to the
               aggregator and obtaining a connection string.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem ordered>
               2. Logging into that environment and pasting the connection string
               from the aggregator. This action establishes a connection between
               the two applications.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem ordered>
               3. Logging back into the aggregator and authenticating to the
               environment after connection has been established.
-            </li>
-          </ul>
+            </ListItem>
+          </ol>
           <div className={styles.sectionWrapper}>
             <Image
               src={"/portfolio/setup-flow.png"}
@@ -162,8 +256,9 @@ export default function AboutMe() {
             alt="Image with widgets displaying warnings"
           />
         </ContentWrapper>
+        <ContentWrapper withBackground></ContentWrapper>
         <ContentWrapper>
-          <h1>Usability testing</h1>
+          <h1>Event page and usability testing</h1>
           <p>
             We did usability testing on more complicated features, one of which
             was the Event page. Its purpose was to give an overview of the
@@ -173,12 +268,36 @@ export default function AboutMe() {
             emphasised unwanted trends, eg., the amount of sessions freezing was
             higher than usual.{" "}
           </p>
-          <p>
+          <p>One of the earlier designs:</p>
+          <div className={styles.sectionWrapper}>
+            <Image
+              src="/ME-events-pre-testing.png"
+              width={2183}
+              height={964}
+              // className={styles.shadow}
+              alt="Image of event page before testing"
+            />
+          </div>
+          {/* <p>
             We started usability testing early using interactive Figma
             prototypes. We tested with a group of 8 participants of varying
             experience with RPA and did a few iterations of the tests.{" "}
-          </p>
-          <h2>Usability test findings</h2>
+          </p> */}
+          <h2>Testing approach</h2>
+          <ul>
+            <ListItem>
+              5-8 moderated sessions with different participants. Participants
+              were internal company employees—developers (who were unfamiliar
+              with this functionality or product), customer success
+              representatives, and QA testers.
+            </ListItem>
+            <ListItem>A mix of in-person and remote sessions.</ListItem>
+            <ListItem>
+              We tested nearly finished designs to identify usability issues.
+            </ListItem>
+            <ListItem>We used clickable Figma prototypes.</ListItem>
+          </ul>
+          <h2>Test findings</h2>
           <p>
             <b>UI was generally intuitive and understandable.</b> All
             participants understood the purpose of the page and easily got their
@@ -201,6 +320,7 @@ export default function AboutMe() {
             section and removing the time period slider as well as addressing
             the navigation issue. We repeated the tests after the changes.
           </p>
+          <p>Updated designs after testing and deeper discussions:</p>
           <Image
             src="/portfolio/events.png"
             width={2183}
@@ -208,6 +328,33 @@ export default function AboutMe() {
             className={styles.shadow}
             alt="Image of event page"
           />
+        </ContentWrapper>
+        <ContentWrapper withBackground>
+          <h1>Conclusion and final thoughts</h1>
+          <p>
+            The RPA data aggregator was an interesting and challenging product
+            to work on, and a great opportunity to learn and grow. Here are some
+            key things this project has taught me:
+          </p>
+          <ul>
+            <ListItem>
+              Systemic design thinking. The aggregator was one of three products
+              the client developed, which meant that any time I made a design
+              decision, I had to consider how it would affect the other two
+              products in terms of consistency.
+            </ListItem>
+            <ListItem>Design system maintenance and development.</ListItem>
+            <ListItem>Working with limitations</ListItem>
+            <ListItem>
+              Quick adaptation. There was a rebrandingalong the way as well as
+              some unplanned features.
+            </ListItem>
+          </ul>
+          <p>Things I would have done differently:</p>
+          <ul>
+            <ListItem>Tested more often and on more features.</ListItem>
+            <ListItem>Promoted the design system more.</ListItem>
+          </ul>
         </ContentWrapper>
       </main>
       <Footer />

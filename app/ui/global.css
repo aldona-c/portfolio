@@ -74,16 +74,13 @@ h2 {
 }
 
 p,
-ul {
+ul,
+ol {
   margin-bottom: 2rem;
 }
 
 b {
   font-weight: 600;
-}
-
-li {
-  margin-bottom: 0.75rem;
 }
 
 @media (max-width: 768px) {

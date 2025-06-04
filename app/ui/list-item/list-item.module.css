@@ -1,0 +1,26 @@
+.listItem {
+  margin-bottom: calc(var(--base-space) * 2);
+  padding-left: calc(var(--base-space) * 3);
+  position: relative;
+}
+
+.listItem.ordered {
+  padding-left: 0;
+}
+
+.listItem::before {
+  background-color: var(--color-text);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 0;
+  margin-right: calc(var(--base-space) * 2);
+  position: absolute;
+  top: 10px;
+  width: 6px;
+}
+
+.ordered::before {
+  content: none;
+}
