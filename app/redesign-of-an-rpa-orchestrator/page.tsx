@@ -14,7 +14,7 @@ export default function Redesign() {
       <main>
         <ContentWrapper wide withBackground projectHero>
           <Image
-            src="/portfolio/core-hero.png"
+            src="/core-hero.png"
             width={1170}
             height={964}
             alt="Image of the RPA application"
@@ -26,12 +26,12 @@ export default function Redesign() {
           <div className={styles.summary}>
             <div className={styles.textBlock}>
               <p>
-                The project was a redesign of a Robotic Process Automation (RPA)
-                orchestrator which was already live and being used by customers.
-                The new branding identity was created by a third party design
-                agency while our product team was working on updating the
-                application according to the new branding and also solving some
-                existing usability issues.
+                A redesign of a Robotic Process Automation (RPA) orchestrator
+                which was already live and being used by customers. The new
+                branding identity was created by a third party design agency
+                while our product team was working on updating the application
+                according to the new branding and also solving some existing
+                usability issues.
               </p>
               <h2>My contribution</h2>
               <p>
@@ -50,6 +50,17 @@ export default function Redesign() {
           </div>
         </ContentWrapper>
         <ContentWrapper>
+          <h1>Problem statement and goal</h1>
+          <h2>Problem</h2>
+          <p>
+            The application was developed some years ago without the help of
+            designers, which led to a few issues that we wanted to solve before
+            next release. The deadline was tight so we had to prioritise and
+            choose changes that would not impact the main functionality too
+            much.
+          </p>
+        </ContentWrapper>
+        <ContentWrapper withBackground>
           <h1>Planning and limitations</h1>
           <p>
             Because the deadline for the redesign release was tight and
@@ -63,7 +74,7 @@ export default function Redesign() {
           <div className={styles.imgWrapper}>
             <h2>Before redesign</h2>
             <Image
-              src="/portfolio/core-old.png"
+              src="/core-old.png"
               width={1024}
               height={722}
               className={styles.imageMedium}
@@ -73,7 +84,7 @@ export default function Redesign() {
           <div className={styles.imgWrapper}>
             <h2>After redesign</h2>
             <Image
-              src="/portfolio/core-preview-2.png"
+              src="/core-preview-2.png"
               width={1024}
               height={722}
               className={styles.imageMedium}
@@ -125,14 +136,14 @@ export default function Redesign() {
             </div>
             <div className={styles.chartColorWrapper}>
               <Image
-                src="/portfolio/chart-colors-dark.png"
+                src="/chart-colors-dark.png"
                 width={1024}
                 height={460}
                 className={styles.shadow}
                 alt="Image of chart colors dark"
               />
               <Image
-                src="/portfolio/chart-colors-light.png"
+                src="/chart-colors-light.png"
                 width={1024}
                 height={460}
                 className={styles.shadow}
@@ -172,14 +183,14 @@ export default function Redesign() {
             been avoided if the UX team was included earlier.
           </p>
           <Image
-            src="/portfolio/core-preview-2.png"
+            src="/core-preview-2.png"
             width={1024}
             height={722}
             className={styles.imgWrapperSmallMargin}
             alt="Image of the application in dark and light mode"
           />
           <Image
-            src="/portfolio/core-tables.png"
+            src="/core-tables.png"
             width={1024}
             height={722}
             alt="Image of tables and a chart"

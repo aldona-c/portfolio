@@ -8,6 +8,7 @@ import Footer from "../ui/footer/footer";
 import LabelPairs from "../ui/label-pairs/label-pairs";
 import PageWrapper from "../ui/page-wrapper/page-wrapper";
 import ListItem from "../ui/list-item/list-item";
+import Caption from "../ui/caption/caption";
 
 export default function AboutMe() {
   return (
@@ -21,7 +22,7 @@ export default function AboutMe() {
               width={1440}
               height={964}
               className={styles.shadow}
-              alt="Image of a dashboard"
+              alt="Dashboard"
               priority
             />
             <Image
@@ -29,7 +30,7 @@ export default function AboutMe() {
               width={323}
               height={964}
               className={styles.shadow}
-              alt="Image of a sidebar form"
+              alt="Sidebar form"
               priority
             />
           </div>
@@ -39,11 +40,8 @@ export default function AboutMe() {
           <div className={styles.summary}>
             <div className={styles.textBlock}>
               <p>
-                This was the second product developed by the company I worked
-                for, following their main product - a RPA orchestrator. It was
-                designed to supplement the core application by aggregating data
-                from several instances of the RPA orchestrator and displaying it
-                in a convenient way.
+                A web application designed to retrieve data from multiple
+                sources and display the aggregated results in a dashboard.
               </p>
               <h2>My contribution</h2>
               <p>
@@ -63,6 +61,20 @@ export default function AboutMe() {
         </ContentWrapper>
         <ContentWrapper>
           <h1>Project overview</h1>
+          <p>
+            This was the second product developed by the company I worked for,
+            following their main product - a RPA orchestrator. It was designed
+            to supplement their core application by aggregating data from
+            several instances of the RPA orchestrator and displaying it in a
+            convenient way.
+          </p>
+          <p>
+            The purpose of the application was to give bigger customers, that
+            already had several instances of the RPA orchestrator installed, a
+            way to monitor and have an overview of all the processes and events
+            without having to log into each instance of the RPA orchestrator
+            separately.
+          </p>
         </ContentWrapper>
         <ContentWrapper withBackground>
           <h1>Research</h1>
@@ -114,14 +126,6 @@ export default function AboutMe() {
         </ContentWrapper>
         <ContentWrapper>
           <h1>Project scope</h1>
-          {/* <p>
-            During the Discovery phase, I collaborated with stakeholders to
-            understand the core problem we were trying to solve and identified
-            the target audience for the product. I also spent some time getting
-            to know their main product and RPA industry in general—I tried using
-            some RPA applications myself, had meetings with people who are more
-            experienced in the field.
-          </p> */}
           <p>Here are the main features that were planned for the MVP:</p>
           <InfoCards />
         </ContentWrapper>
@@ -164,26 +168,28 @@ export default function AboutMe() {
               Actions are handled via a side panel in order to not lose context.
             </ListItem>
           </ul>
-          <div className={styles.sectionWrapper}>
+          <figure className={styles.sectionWrapper}>
             <Image
               src="/me-dashboard.png"
               width={1440}
               height={964}
               className={styles.shadow}
-              alt="Image of a dashboard"
+              alt="Dashboard"
               priority
             />
-          </div>
-          <div className={styles.sectionWrapper}>
+            <Caption text="Dashboard view." />
+          </figure>
+          <figure className={styles.sectionWrapper}>
             <Image
               src="/side-panel-open.png"
               width={1440}
               height={964}
               className={styles.shadow}
-              alt="Image of a dashboard"
+              alt="Dashboard with a side panel open"
               priority
             />
-          </div>
+            <Caption text="A side panle displaying a form to add a new widget to the dashboard." />
+          </figure>
           <h2>Environment setup flow</h2>
           <p>
             Environment setup flow was a core feature for the application -
@@ -208,7 +214,7 @@ export default function AboutMe() {
               environment after connection has been established.
             </ListItem>
           </ol>
-          <div className={styles.sectionWrapper}>
+          <figure className={styles.sectionWrapper}>
             <Image
               src={"/portfolio/setup-flow.png"}
               width={1240}
@@ -216,8 +222,9 @@ export default function AboutMe() {
               className={styles.shadow}
               alt="Environment setup flow"
             />
-          </div>
-          <h2>Challenges</h2>
+            <Caption text="A flowchart of the environment setup." />
+          </figure>
+          <h3>Challenges</h3>
           <p>
             After having mapped out the setup flow we noticed some potential
             pain points that might cause confusion in users:
@@ -235,7 +242,7 @@ export default function AboutMe() {
             there could be cases where each step was going to be performed by
             separate people, possibly over a span of a few weeks.
           </p>
-          <h2>Solution</h2>
+          <h3>Solution</h3>
           <p>
             We could not simplify the three step setup due to technical
             limitations, so instead our goal was to make the process as clear as
@@ -248,15 +255,17 @@ export default function AboutMe() {
             important in the case where separate people would be setting up the
             environments.
           </p>
-          <Image
             src="/portfolio/warnings.png"
-            width={2183}
-            height={964}
-            className={styles.shadow}
-            alt="Image with widgets displaying warnings"
-          />
+          <figure>
+            <Image
+              width={2183}
+              height={964}
+              className={styles.shadow}
+              alt="Widgets displaying warnings"
+            />
+            <Caption text="An example of a system that has not been set up fully. The warning messages indicate that there are issues with environment connections." />
+          </figure>
         </ContentWrapper>
-        <ContentWrapper withBackground></ContentWrapper>
         <ContentWrapper>
           <h1>Event page and usability testing</h1>
           <p>
@@ -268,26 +277,21 @@ export default function AboutMe() {
             emphasised unwanted trends, eg., the amount of sessions freezing was
             higher than usual.{" "}
           </p>
-          <p>One of the earlier designs:</p>
-          <div className={styles.sectionWrapper}>
+          <figure className={styles.sectionWrapper}>
             <Image
               src="/ME-events-pre-testing.png"
               width={2183}
               height={964}
               // className={styles.shadow}
-              alt="Image of event page before testing"
+              alt="Event page before testing"
             />
-          </div>
-          {/* <p>
-            We started usability testing early using interactive Figma
-            prototypes. We tested with a group of 8 participants of varying
-            experience with RPA and did a few iterations of the tests.{" "}
-          </p> */}
+            <Caption text="One of the earlier event page design before testing." />
+          </figure>
           <h2>Testing approach</h2>
           <ul>
             <ListItem>
               5-8 moderated sessions with different participants. Participants
-              were internal company employees—developers (who were unfamiliar
+              were internal company employees - developers (who were unfamiliar
               with this functionality or product), customer success
               representatives, and QA testers.
             </ListItem>
@@ -320,14 +324,16 @@ export default function AboutMe() {
             section and removing the time period slider as well as addressing
             the navigation issue. We repeated the tests after the changes.
           </p>
-          <p>Updated designs after testing and deeper discussions:</p>
-          <Image
             src="/portfolio/events.png"
-            width={2183}
-            height={964}
-            className={styles.shadow}
-            alt="Image of event page"
-          />
+          <figure>
+            <Image
+              width={2183}
+              height={964}
+              className={styles.shadow}
+              alt="Event page after testing"
+            />
+            <Caption text="Updated event page design after testing and deeper discussions." />
+          </figure>
         </ContentWrapper>
         <ContentWrapper withBackground>
           <h1>Conclusion and final thoughts</h1>
