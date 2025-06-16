@@ -7,6 +7,10 @@
   grid-row-gap: 0px;
 }
 
+.sectionWrapper {
+  margin-bottom: calc(var(--base-space) * 4);
+}
+
 .summary {
   display: grid;
   grid-template-columns: 4fr 1fr;
