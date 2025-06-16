@@ -6,6 +6,8 @@ import ContentWrapper from "../ui/content-wrapper/content-wrapper";
 import Footer from "../ui/footer/footer";
 import LabelPairs from "../ui/label-pairs/label-pairs";
 import PageWrapper from "../ui/page-wrapper/page-wrapper";
+import ListItem from "../ui/list-item/list-item";
+import Caption from "../ui/caption/caption";
 
 export default function Redesign() {
   return (
@@ -53,56 +55,94 @@ export default function Redesign() {
           <h1>Problem statement and goal</h1>
           <h2>Problem</h2>
           <p>
-            The application was developed some years ago without the help of
-            designers, which led to a few issues that we wanted to solve before
-            next release. The deadline was tight so we had to prioritise and
-            choose changes that would not impact the main functionality too
-            much.
+            Although the RPA tool delivers critical automation functionality,
+            the UI was built without design oversight. As a result:
           </p>
+          <ul>
+            <ListItem>
+              Visual styling clashes with the modern brand direction.
+            </ListItem>
+            <ListItem>
+              Some of the features and actions are not grouped intuitively.
+            </ListItem>
+          </ul>
+          <h2>Goal</h2>
+          <p>Redesign the RPA web interface to:</p>
+          <ul>
+            <ListItem>
+              Adopt a clean, brand-aligned visual system (fonts, colors,
+              spacing) that feels contemporary.
+            </ListItem>
+            <ListItem>
+              Reorganize the structure and menus into logical groups based on
+              task flow.
+            </ListItem>
+          </ul>
         </ContentWrapper>
         <ContentWrapper withBackground>
-          <h1>Planning and limitations</h1>
+          <h1>Design audit</h1>
           <p>
-            Because the deadline for the redesign release was tight and
-            customers were already using the application, we needed to carefully
-            plan which features were going to be updated. Any big functionality
-            changes were going to be risky and needed time for usability
-            testing. It was decided to focus more on the visual changes and
-            small usability improvements for the initial redesign launch, and
-            work on bigger functionality gradually after the launch.
+            We started the work by performing a design audit. The goal was to
+            assess visual consistency and alignment with design best practices
+            accross the application, as well as revisit how the content is
+            structured, and check for accessibility issues.
           </p>
-          <div className={styles.imgWrapper}>
-            <h2>Before redesign</h2>
+          <h2>Visual style observations</h2>
+          <ul>
+            <ListItem>
+              Dated colour palette no longer aligned with the brand
+            </ListItem>
+            <ListItem>
+              Not sufficient text colour contrast on widgets and charts
+            </ListItem>
+            <ListItem>Font size of many of the elements was too small</ListItem>
+          </ul>
+          <h2>Structural and navigation issues</h2>
+          <ul>
+            <ListItem>User management split into several places</ListItem>
+            <ListItem>
+              Account management mixed with RPA related functionality
+            </ListItem>
+            <ListItem>
+              Side menu too crowded - expanding menu items often evokes a
+              scrollbar which could be avoided
+            </ListItem>
+          </ul>
+          <figure>
             <Image
               src="/core-old.png"
-              width={1024}
-              height={722}
-              className={styles.imageMedium}
-              alt="Image of the core application before the redesign"
+              width={1440}
+              height={964}
+              className={styles.shadow}
+              alt="Application before the redesign"
             />
-          </div>
-          <div className={styles.imgWrapper}>
-            <h2>After redesign</h2>
-            <Image
-              src="/core-preview-2.png"
-              width={1024}
-              height={722}
-              className={styles.imageMedium}
-              alt="Image of the core application after the redesign"
-            />
-          </div>
+            <Caption text="Application before the redesign" />
+          </figure>
         </ContentWrapper>
-        <ContentWrapper withBackground>
-          <h1>Working with chart colours</h1>
+        <ContentWrapper>
+          <h1>Working with colours</h1>
           <p>
-            We used the branding colour palette for most UI elements, however we
-            couldn’t do that with the dashboard charts and widgets as the new
-            branding colours were very vibrant, which was great for marketing
-            material, but didn’t work quite so well in a dashboard setting with
-            lots of data. We had to find a palette for the charts that worked
-            well with the new branding and was also easy to look at for extended
-            periods of time. The palette also had to work both in light mode and
-            dark.
+            The new colour palette was provided by a third party design agency,
+            however, it was designed with marketing in mind rather than UX/UI of
+            the actual application. The main colours were very vibrant, which
+            worked great for print and digital marketing, but not quite as well
+            for an application with a lot of data. We were also missing some
+            shades of gray.
+          </p>
+          <h2>Adjusting the colour palette</h2>
+          <p>
+            For most of the elements we tried to stick with the new branding as
+            much as possible. We added some extra shades of gray and had to
+            adjust the saturation of the accent colours a bit to work better for
+            a data heavy application.
+          </p>
+          <h2>Finding the right chart colours</h2>
+          <p>
+            The most challenging part was to find the right colours for the
+            charts and widgets. We had to display several different states, make
+            them distinguishable enough, as well as comfortable to look at for
+            extended periods of time. The same pallete also had to work both in
+            dark and light modes.
           </p>
           <p>
             Finding the chart colours was a combination of colour theory and a
@@ -140,19 +180,19 @@ export default function Redesign() {
                 width={1024}
                 height={460}
                 className={styles.shadow}
-                alt="Image of chart colors dark"
+                alt="Chart colors dark"
               />
               <Image
                 src="/chart-colors-light.png"
                 width={1024}
                 height={460}
                 className={styles.shadow}
-                alt="Image of chart colors light"
+                alt="Chart colors light"
               />
             </div>
           </div>
         </ContentWrapper>
-        <ContentWrapper>
+        <ContentWrapper withBackground>
           <h1>Updating navigation</h1>
           <p>
             The navigation generally was not bad, however some functionalities
@@ -162,6 +202,16 @@ export default function Redesign() {
             related functionality to a top bar, leaving the side menu for RPA
             related things only.
           </p>
+          <figure className={styles.sectionWrapper}>
+            <Image
+              src="/core-dashboard-light.png"
+              width={1440}
+              height={964}
+              className={styles.shadow}
+              alt="Dashboard in light mode"
+            />
+            <Caption text="The new design with the updated top bar and side menu" />
+          </figure>
           <h1>Accessibility issues</h1>
           <p>
             We wanted to address some accessibility issues that could be fixed
@@ -171,7 +221,7 @@ export default function Redesign() {
             where possible.
           </p>
         </ContentWrapper>
-        <ContentWrapper withBackground>
+        <ContentWrapper>
           <h1>Takeaways and final design</h1>
           <p>
             Not being able to work on the company rebranding part together with
@@ -182,19 +232,35 @@ export default function Redesign() {
             made it work, however some of the issues and extra work could have
             been avoided if the UX team was included earlier.
           </p>
-          <Image
-            src="/core-preview-2.png"
-            width={1024}
-            height={722}
-            className={styles.imgWrapperSmallMargin}
-            alt="Image of the application in dark and light mode"
-          />
-          <Image
-            src="/core-tables.png"
-            width={1024}
-            height={722}
-            alt="Image of tables and a chart"
-          />
+          <figure className={styles.sectionWrapper}>
+            <Image
+              src="/core-new-dark.png"
+              width={1024}
+              height={722}
+              className={styles.shadow}
+              alt="Application in dark mode"
+            />
+            <Caption text="Dashboard view in dark mode" />
+          </figure>
+          <figure className={styles.sectionWrapper}>
+            <Image
+              src="/core-dashboard-light.png"
+              width={1024}
+              height={722}
+              className={styles.shadow}
+              alt="Application in light mode"
+            />
+            <Caption text="Dashboard view in light mode" />
+          </figure>
+          <figure>
+            <Image
+              src="/core-tables.png"
+              width={1024}
+              height={722}
+              alt="Image of tables and a chart"
+            />
+            <Caption text="Some examples of other elements used in the application. In this case, mostly the colouring was changed without any bigger updates" />
+          </figure>
         </ContentWrapper>
       </main>
       <Footer />
