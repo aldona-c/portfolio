@@ -4,9 +4,10 @@ interface pairProps {
   role: string;
   tools: string;
   length: string;
+  team?: string;
 }
 
-export default function LabelPairs({ role, tools, length }: pairProps) {
+export default function LabelPairs({ role, tools, length, team }: pairProps) {
   return (
     <div>
       <div className={styles.pair}>
@@ -21,6 +22,12 @@ export default function LabelPairs({ role, tools, length }: pairProps) {
         <label className={styles.label}>Project length</label>
         <div>{length}</div>
       </div>
+      {team && (
+        <div className={styles.pair}>
+          <label className={styles.label}>Team</label>
+          <div>{team}</div>
+        </div>
+      )}
     </div>
   );
 }

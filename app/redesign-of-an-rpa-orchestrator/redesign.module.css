@@ -6,6 +6,10 @@
   grid-row-gap: 0px;
 }
 
+.sectionWrapper {
+  margin-bottom: calc(var(--base-space) * 4);
+}
+
 .textBlock {
   border-right: 1px solid var(--color-border);
   padding-right: calc(var(--base-space) * 8);

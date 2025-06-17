@@ -1,12 +1,3 @@
-.heroWrapper {
-  align-items: flex-end;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: calc(var(--base-space) * 3);
-  grid-row-gap: 0px;
-}
-
 .sectionWrapper {
   margin-bottom: calc(var(--base-space) * 4);
 }

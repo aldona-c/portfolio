@@ -18,8 +18,8 @@ const projects = [
   {
     title: "Redesign of an RPA orchestrator",
     description:
-      "A web application that specializes in Robotic Process Automation (RPA) orchestration, helping organizations automate and streamline their business processes.",
-    img: "/portfolio/core-preview-2.png",
+      "A web application that specializes in (RPA) orchestration, helping organizations automate and streamline their business processes.",
+    img: "/portfolio/core-preview.png",
     role: "UX/UI Designer",
     industry: "Robotic Process Automation",
     length: "2 months",
@@ -27,15 +27,26 @@ const projects = [
     alt: "Image of an application",
   },
   {
-    title: "Lifeplanner",
+    title: "Digital safe",
     description:
-      "A web application that acts as a digital safe. It is a place to store your documents, information about your assets or anything sentimental like photos of your most precious moments.",
+      "A web application designed to store and organize users’ most valuable digital assets.",
     img: "/portfolio/lifeplanner-preview.png",
     role: "UX/UI Designer, Frontend Developer",
     industry: "Personal organization",
     length: "1.5 years",
     href: "/lifeplanner",
     alt: "Image of an application desktop and mobile view",
+  },
+  {
+    title: "License management application",
+    description:
+      "A web-based internal license management tool for a mid-sized tech company.",
+    img: "/portfolio/license-manager-preview.png",
+    role: "UX/UI Designer",
+    industry: "Internal tooling",
+    length: "5 months",
+    href: "/license-management-application",
+    alt: "License agreement page",
   },
 ];
 
