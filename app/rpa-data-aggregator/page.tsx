@@ -56,6 +56,7 @@ export default function AboutMe() {
               role="UX/UI designer"
               tools="Figma, Miro, Jira"
               length="~ 2 years"
+              team="2 designers, product owner, RPA expert, development team"
             />
           </div>
         </ContentWrapper>
@@ -102,8 +103,8 @@ export default function AboutMe() {
           <h2>Insights:</h2>
           <ul>
             <ListItem>
-              The key functionalities for the ME were going to be the dashboard
-              and the event page.
+              The key functionalities for the aggregator were going to be the
+              dashboard and the event page.
             </ListItem>
             <ListItem>
               The users were most likely going to be tech savvy and familiar
@@ -282,7 +283,7 @@ export default function AboutMe() {
               src="/ME-events-pre-testing.png"
               width={2183}
               height={964}
-              // className={styles.shadow}
+              className={styles.shadow}
               alt="Event page before testing"
             />
             <Caption text="One of the earlier event page design before testing." />

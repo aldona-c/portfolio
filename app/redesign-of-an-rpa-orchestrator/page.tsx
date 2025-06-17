@@ -48,6 +48,7 @@ export default function Redesign() {
               role="UX/UI designer"
               tools="Figma, Miro, Jira"
               length="~ 2 months"
+              team="2 designers, 2 stakeholders, development team"
             />
           </div>
         </ContentWrapper>
