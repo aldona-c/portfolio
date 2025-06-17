@@ -16,7 +16,7 @@ export default function Redesign() {
       <main>
         <ContentWrapper wide withBackground projectHero>
           <Image
-            src="/core-hero.png"
+            src="/portfolio/core-hero.png"
             width={1170}
             height={964}
             alt="Image of the RPA application"
@@ -111,7 +111,7 @@ export default function Redesign() {
           </ul>
           <figure>
             <Image
-              src="/core-old.png"
+              src="/portfolio/core-old.png"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -177,14 +177,14 @@ export default function Redesign() {
             </div>
             <div className={styles.chartColorWrapper}>
               <Image
-                src="/chart-colors-dark.png"
+                src="/portfolio/chart-colors-dark.png"
                 width={1024}
                 height={460}
                 className={styles.shadow}
                 alt="Chart colors dark"
               />
               <Image
-                src="/chart-colors-light.png"
+                src="/portfolio/chart-colors-light.png"
                 width={1024}
                 height={460}
                 className={styles.shadow}
@@ -205,7 +205,7 @@ export default function Redesign() {
           </p>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/core-dashboard-light.png"
+              src="/portfolio/core-dashboard-light.png"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -235,7 +235,7 @@ export default function Redesign() {
           </p>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/core-new-dark.png"
+              src="/portfolio/core-new-dark.png"
               width={1024}
               height={722}
               className={styles.shadow}
@@ -245,7 +245,7 @@ export default function Redesign() {
           </figure>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/core-dashboard-light.png"
+              src="/portfolio/core-dashboard-light.png"
               width={1024}
               height={722}
               className={styles.shadow}
@@ -255,7 +255,7 @@ export default function Redesign() {
           </figure>
           <figure>
             <Image
-              src="/core-tables.png"
+              src="/portfolio/core-tables.png"
               width={1024}
               height={722}
               alt="Image of tables and a chart"

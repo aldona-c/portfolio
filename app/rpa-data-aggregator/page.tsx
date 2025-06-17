@@ -171,7 +171,7 @@ export default function AboutMe() {
           </ul>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/me-dashboard.png"
+              src="/portfolio/me-dashboard.png"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -182,7 +182,7 @@ export default function AboutMe() {
           </figure>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/side-panel-open.png"
+              src="/portfolio/side-panel-open.png"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -217,7 +217,7 @@ export default function AboutMe() {
           </ol>
           <figure className={styles.sectionWrapper}>
             <Image
-              src={"/portfolio/setup-flow.png"}
+              src="/portfolio/setup-flow.png"
               width={1240}
               height={402}
               className={styles.shadow}
@@ -256,9 +256,9 @@ export default function AboutMe() {
             important in the case where separate people would be setting up the
             environments.
           </p>
-            src="/portfolio/warnings.png"
           <figure>
             <Image
+              src="/portfolio/warnings.png"
               width={2183}
               height={964}
               className={styles.shadow}
@@ -280,7 +280,7 @@ export default function AboutMe() {
           </p>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/ME-events-pre-testing.png"
+              src="/portfolio/ME-events-pre-testing.png"
               width={2183}
               height={964}
               className={styles.shadow}
@@ -325,9 +325,9 @@ export default function AboutMe() {
             section and removing the time period slider as well as addressing
             the navigation issue. We repeated the tests after the changes.
           </p>
-            src="/portfolio/events.png"
           <figure>
             <Image
+              src="/portfolio/events.png"
               width={2183}
               height={964}
               className={styles.shadow}

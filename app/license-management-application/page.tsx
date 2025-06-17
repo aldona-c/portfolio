@@ -15,7 +15,7 @@ export default function Lifeplanner() {
       <main>
         <ContentWrapper wide withBackground projectHero>
           <Image
-            src="/license-manager-shadow.png"
+            src="/portfolio/license-manager-shadow.png"
             width={1440}
             height={964}
             alt="License manager page"
@@ -142,7 +142,7 @@ export default function Lifeplanner() {
           </p>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/license-manager.png"
+              src="/portfolio/license-manager.png"
               width={1440}
               height={964}
               className={styles.shadow}

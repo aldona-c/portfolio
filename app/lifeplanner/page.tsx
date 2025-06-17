@@ -138,7 +138,7 @@ export default function Lifeplanner() {
           </p>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/lifeplanner-tips-2.png"
+              src="/portfolio/lifeplanner-tips-2.png"
               width={1440}
               height={964}
               className={styles.shadow}
@@ -168,7 +168,7 @@ export default function Lifeplanner() {
             could be shared thoughtfully and responsibly.
           </p>
           <Image
-            src="/lifeplanner-share-form.jpg"
+            src="/portfolio/lifeplanner-share-form.jpg"
             width={1440}
             height={964}
             className={styles.shadow}
