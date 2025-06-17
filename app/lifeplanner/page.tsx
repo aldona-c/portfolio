@@ -35,7 +35,7 @@ export default function Lifeplanner() {
           </div>
         </ContentWrapper>
         <ContentWrapper withBackground>
-          <h1>Lifeplanner</h1>
+          <h1>Digital safe</h1>
           <div className={styles.summary}>
             <div className={styles.textBlock}>
               <p>
