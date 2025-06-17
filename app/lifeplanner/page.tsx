@@ -138,7 +138,7 @@ export default function Lifeplanner() {
           </p>
           <figure className={styles.sectionWrapper}>
             <Image
-              src="/portfolio/lifeplanner-share-form.jpg"
+              src="/lifeplanner-tips-2.png"
               width={1440}
               height={964}
               className={styles.shadow}
